@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bahianita&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    color: #ededed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #050505;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+}
+
+.logo {
+    position: relative;
+    height: 80px;
+}
+
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #050505;
+}
+
+.navbar a {
+    font-size: 18px; 
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: pink;
+}
+
+.home {
+    height: 100vh;
+    background: url('pic/portfolio.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 5rem;
+}
+
+.home-content {
+    max-width: 900px;
+    
+}
+
+.home-content h1 {
+    font-family: 'Abril Fatface', serif;
+    position: relative;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #050505;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+
+.home-content h6 {
+    font-family: 'Bahianita', sans-serif;
+    position: relative;
+    font-size: 64px;
+    font-weight: 700;
+    color: pink;
+}
+
+.home-content h6::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #050505;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.home-content p {
+    font-family: 'Bahianita', sans-serif;
+    font-size: 32px;
+    position: relative;
+    margin: 20px 0 40px;
+}
+
+.home-content p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #050505;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.4s;
+}
+
+.home-content .btn-box {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    height: 50px;
+}
+
+.home-content .btn-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #050505;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2s;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: pink;
+    border: 2px solid pink;
+    border-radius: 7px;
+    font-size: 20px;
+    color: #050505;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px ;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover {
+    color: pink;
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: pink;
+}
+
+.btn-box a:nth-child(2):hover {
+    color: #050505;
+}
+
+.btn-box a:nth-child(2)::before {
+    background: pink;
+}
+
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #050505;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    gap: 2rem;
+    display: flex;
+    padding: 2rem;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    font-size: 20px;
+    color: pink;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    border-style: double;
+    transition: .5s;
+}
+.home-sci a:hover {
+    color: ##050505;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: pink;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+
+.home-imghover {
+    position: absolute;
+    top: 10;
+    right: 10px;
+    width: 1050px;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
+}
+
+.home-imghover:hover {
+    background: ##050505;
+    opacity: .8;
+}
+
+.home-imghover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #050505;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.6s;
+}
+
+.about {
+    height: 100vh;
+    padding: 20px;
+    background: #050505;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.about h1 {
+    font-family: 'Abril Fatface', serif;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    font-size: 100px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    width: 1000rem;
+    height: 93vh;
+    padding: 7rem;
+    
+}
+
+.about-content div {
+    display: flex;
+    background: -webkit-linear-gradient(90deg,
+        rgba(231, 84, 128, 1) 0%,
+        rgba(254, 142, 172, 1) 35%,
+        rgba(255, 209, 220, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-color: #050505;
+    width: 100%;
+    height: 80vh;
+    margin: 10px;
+}
+
+.about .about-content .education {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.about .about-content .education h2 {
+    margin: 2rem;
+    font-family: 'Abril Fatface', serif;
+    font-size: 5rem;
+}
+
+.about .education h3{
+    margin: 2rem;
+    font-family: 'Abril Fatface', serif;
+    font-size: 3rem;
+}
+
+.about .about-content .work {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about .about-content .work h2 {
+    margin: 2rem;
+    font-family: 'Abril Fatface', serif;
+    font-size: 5rem;
+    
+}
+
+.about .work h3 {
+    margin: 5rem;
+    font-family: 'Abril Fatface', serif;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.about p1 {
+    font-size: 20px;
+}
+
+.skills {
+    height: 100vh;
+        padding: 20px;
+        background: #050505;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        padding-top: 5rem;
+}
+
+@keyframes showRight {
+    100%{
+        width: 0;
+    }
+}
+@keyframes manipActivaHover {
+    100%{
+        pointer-events: auto;
+    }
+}

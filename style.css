@@ -113,7 +113,7 @@ body {
 }
 
 .home-content p {
-    font-family: 'Bahianita', sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 32px;
     position: relative;
     margin: 20px 0 40px;
@@ -282,7 +282,7 @@ body {
     background-size: cover;
     display: flex;
     justify-content: center;
-    padding-top: 5rem;
+    padding-top: 6rem;
 }
 
 .about h1 {
@@ -347,7 +347,6 @@ body {
     margin: 2rem;
     font-family: 'Abril Fatface', serif;
     font-size: 5rem;
-    
 }
 
 .about .work h3 {
@@ -362,13 +361,46 @@ body {
 }
 
 .skills {
+    display: flex;
+    padding-top: 6rem;
+    background-color:#050505;
     height: 100vh;
-        padding: 20px;
-        background: #050505;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        padding-top: 5rem;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills h1 {
+    display: flex;
+    position: absolute;
+    font-family: 'Abril Fatface', serif;
+    font-size: 100px;
+}
+
+.skills .skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15rem;
+    padding-top: 10rem;
+    padding-left: 10rem;
+    align-content: space-around;
+    flex-direction: row;
+    margin: 1px .5px;
+}
+
+.skills .logo {
+    height: 300px;
+    width: 300px;
+}
+
+.projects {
+    display: flex;
+    padding-top: 6rem;
+    background-color: #050505;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 @keyframes showRight {

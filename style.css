@@ -347,9 +347,8 @@ body {
 }
 
 .skills .logo:hover {
-    background-color: pink;
-    transition-duration: 2s;
-    transition-delay: .5;
+    transform: translate(10px, 10px);
+    transition: ease-in-out 300ms;
 
 }
 
@@ -428,10 +427,13 @@ body {
     border-radius: 5px;
     background-image: url(pic/imagebg.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    margin: 2rem;
-    max-width: 50rem;
+    background-size: contain;
 
+}
+
+.action {
+    display: flex;
+    flex-direction: column;
 }
 
 input[type=text] {
